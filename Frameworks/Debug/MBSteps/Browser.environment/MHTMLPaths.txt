@@ -1,0 +1,1 @@
+@STATIC;1.0;u;29;Resources/if_close_981077.png69;mhtml:Browser.environment/MHTMLData.txt!Resources/if_close_981077.pngu;28;Resources/if_Copy_728927.png68;mhtml:Browser.environment/MHTMLData.txt!Resources/if_Copy_728927.png

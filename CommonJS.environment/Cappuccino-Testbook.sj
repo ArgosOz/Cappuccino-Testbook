@@ -1,4 +1,4 @@
-@STATIC;1.0;p;15;AppController.jt;14565;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.ji;7;State.ji;8;Recipe.jt;14474;objj_executeFile("Foundation/Foundation.j", NO);objj_executeFile("AppKit/AppKit.j", NO);objj_executeFile("State.j", YES);objj_executeFile("Recipe.j", YES);var GITHUB_REPO = 0;
+@STATIC;1.0;p;15;AppController.jt;14554;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.ji;7;State.ji;8;Recipe.jt;14463;objj_executeFile("Foundation/Foundation.j", NO);objj_executeFile("AppKit/AppKit.j", NO);objj_executeFile("State.j", YES);objj_executeFile("Recipe.j", YES);var GITHUB_REPO = 0;
 
 {var the_class = objj_allocateClassPair(CPObject, "AppController"),
 meta_class = the_class.isa;class_addIvars(the_class, [new objj_ivar("theWindow", "CPWindow"), new objj_ivar("_tableView", "CPTableView"), new objj_ivar("_webView", "CPWebView"), new objj_ivar("_splitView", "CPSplitView"), new objj_ivar("_searchField", "CPSearchField"), new objj_ivar("_arrayController", "CPArrayController"), new objj_ivar("_tableDataArray", "CPMutableArray"), new objj_ivar("_state", "State")]);objj_registerClassPair(the_class);
@@ -36,7 +36,7 @@ class_addMethods(the_class, [new objj_method(sel_getUid("tableArray"), function 
     var url = (CPURL.isa.method_msgSend["URLWithString:"] || _objj_forward)(CPURL, "URLWithString:", "Resources/recipes.txt");
     var request = (CPURLRequest.isa.method_msgSend["requestWithURL:"] || _objj_forward)(CPURLRequest, "requestWithURL:", url);
     var connection = ((___r1 = (CPURLConnection.isa.method_msgSend["alloc"] || _objj_forward)(CPURLConnection, "alloc")), ___r1 == null ? null : (___r1.isa.method_msgSend["initWithRequest:delegate:"] || _objj_forward)(___r1, "initWithRequest:delegate:", request, self));
-    var targetNode = self._webView._iframe.parentNode;
+    var targetNode = self._webView._iframe;
     var config = {attributes: true};
     var callback =     function(mutationsList)
     {
