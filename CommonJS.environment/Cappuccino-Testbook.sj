@@ -1,4 +1,4 @@
-@STATIC;1.0;p;15;AppController.jt;14554;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.ji;7;State.ji;8;Recipe.jt;14463;objj_executeFile("Foundation/Foundation.j", NO);objj_executeFile("AppKit/AppKit.j", NO);objj_executeFile("State.j", YES);objj_executeFile("Recipe.j", YES);var GITHUB_REPO = 0;
+@STATIC;1.0;p;15;AppController.jt;14423;@STATIC;1.0;I;23;Foundation/Foundation.jI;15;AppKit/AppKit.ji;7;State.ji;8;Recipe.jt;14332;objj_executeFile("Foundation/Foundation.j", NO);objj_executeFile("AppKit/AppKit.j", NO);objj_executeFile("State.j", YES);objj_executeFile("Recipe.j", YES);var GITHUB_REPO = 0;
 
 {var the_class = objj_allocateClassPair(CPObject, "AppController"),
 meta_class = the_class.isa;class_addIvars(the_class, [new objj_ivar("theWindow", "CPWindow"), new objj_ivar("_tableView", "CPTableView"), new objj_ivar("_webView", "CPWebView"), new objj_ivar("_splitView", "CPSplitView"), new objj_ivar("_searchField", "CPSearchField"), new objj_ivar("_arrayController", "CPArrayController"), new objj_ivar("_tableDataArray", "CPMutableArray"), new objj_ivar("_state", "State")]);objj_registerClassPair(the_class);
@@ -71,7 +71,7 @@ class_addMethods(the_class, [new objj_method(sel_getUid("tableArray"), function 
         var recipe = ((___r1 = (Recipe.isa.method_msgSend["alloc"] || _objj_forward)(Recipe, "alloc")), ___r1 == null ? null : (___r1.isa.method_msgSend["initWithName:folderName:tags:timestamp:"] || _objj_forward)(___r1, "initWithName:folderName:tags:timestamp:", recipeData[1].replace(/-/g, " "), recipeData[1], recipeData[2], parseInt(recipeData[0], 10)));
         ((___r1 = self._arrayController), ___r1 == null ? null : (___r1.isa.method_msgSend["addObject:"] || _objj_forward)(___r1, "addObject:", recipe));
     }
-    var testName = ((___r1 = ((___r2 = (CPApplication.isa.method_msgSend["sharedApplication"] || _objj_forward)(CPApplication, "sharedApplication")), ___r2 == null ? null : (___r2.isa.method_msgSend["namedArguments"] || _objj_forward)(___r2, "namedArguments"))), ___r1 == null ? null : (___r1.isa.method_msgSend["valueForKey:"] || _objj_forward)(___r1, "valueForKey:", "t"));
+    var testName = ((___r1 = (CPApplication.isa.method_msgSend["sharedApplication"] || _objj_forward)(CPApplication, "sharedApplication")), ___r1 == null ? null : (___r1.isa.method_msgSend["arguments"] || _objj_forward)(___r1, "arguments"))[0];
     if (testName)
     {
         var rowNumberToBeSelected;
